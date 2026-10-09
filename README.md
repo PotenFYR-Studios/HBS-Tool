@@ -3,7 +3,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:8b5cf6,50:ec4899,100:f97316&height=220&section=header&text=hbs-tool&fontSize=52&fontColor=ffffff&fontAlignY=34&desc=Sealed%20reports%20%C2%B7%20Read-only%20scans%20%C2%B7%20368%20hardening%20testcases&descSize=18&descAlignY=55&animation=twinkling" width="100%" alt="hbs-tool banner"/>
 
 [![Release](https://img.shields.io/github/v/release/PotenFYR-Studios/HBS-Tool?style=for-the-badge&logo=github&logoColor=white&labelColor=1c1e26&color=8b5cf6)](https://github.com/PotenFYR-Studios/HBS-Tool/releases)
-[![Docs](https://img.shields.io/badge/https:/docs.potenfyr.in/HBS-Tool-8b5cf6?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=1c1e26)](https:/docs.potenfyr.in/HBS-Tool)
+[![Docs](https://img.shields.io/badge/https://docs.potenfyr.in/repo/hbs-tool?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=1c1e26)](https://docs.potenfyr.in/repo/hbs-tool)
 [![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20Windows-ec4899?style=for-the-badge&logo=linux&logoColor=white&labelColor=1c1e26)](#platform-support)
 [![Discord](https://img.shields.io/badge/Discord-Join%20us-5865F2?style=for-the-badge&logo=discord&logoColor=white&labelColor=1c1e26)](https://discord.com/invite/zUaN2FPBec)
 [![GitHub](https://img.shields.io/badge/GitHub-PotenFYR--Studios-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=1c1e26)](https://github.com/PotenFYR-Studios/HBS-Tool)
@@ -17,7 +17,7 @@
 
 **HBS** - an offline-first, strictly read-only configuration-security review platform for enterprise servers, with a sealed-report security model.
 
-[Docs](https:/docs.potenfyr.in/HBS-Tool) · [Getting started](https:/docs.potenfyr.in/HBS-Tool/getting-started) · [Releases](https://github.com/PotenFYR-Studios/HBS-Tool/releases) · [Issues](https://github.com/PotenFYR-Studios/HBS-Tool/issues)
+[Docs](https://docs.potenfyr.in/repo/hbs-tool) · [Getting started](https://docs.potenfyr.in/repo/hbs-tool/getting-started) · [Releases](https://github.com/PotenFYR-Studios/HBS-Tool/releases) · [Issues](https://github.com/PotenFYR-Studios/HBS-Tool/issues)
 
 </div>
 
@@ -40,10 +40,10 @@ It is built for four audiences: **security leadership** (executive one-pager),
 (pivots, evidence, diffing, telemetry), and **upper management** (board-ready
 reporting and printable deliverables).
 
-> The full documentation lives at **[https:/docs.potenfyr.in/HBS-Tool](https:/docs.potenfyr.in/HBS-Tool)**:
-> [getting started](https:/docs.potenfyr.in/HBS-Tool/getting-started),
-> the [extractor reference](https:/docs.potenfyr.in/HBS-Tool/extractor) and
-> the [security model](https:/docs.potenfyr.in/HBS-Tool/security-model).
+> The full documentation lives at **[https://docs.potenfyr.in/repo/hbs-tool](https://docs.potenfyr.in/repo/hbs-tool)**:
+> [getting started](https://docs.potenfyr.in/repo/hbs-tool/getting-started),
+> the [extractor reference](https://docs.potenfyr.in/repo/hbs-tool/extractor) and
+> the [security model](https://docs.potenfyr.in/repo/hbs-tool/security-model).
 > This README mirrors the same content.
 
 ## Table of contents
@@ -692,7 +692,7 @@ cd dashboard && bun run ../scripts/e2e-loop.ts
     - **new version** → creates the release with the changelog (commits since the previous tag);
     - **same version** → overwrites the assets and **appends** the new changelog to the existing notes.
 - **`.github/workflows/docs-pages.yml`** - builds `docs/` and publishes it to
-  GitHub Pages at **[https:/docs.potenfyr.in/HBS-Tool](https:/docs.potenfyr.in/HBS-Tool)**.
+  GitHub Pages at **[https://docs.potenfyr.in/repo/hbs-tool](https://docs.potenfyr.in/repo/hbs-tool)**.
 
 ---
 
@@ -735,7 +735,7 @@ malicious, and it costs nothing because the logic is public anyway.
   obfuscation, no silent updates. Allowlisting recipes for Defender, Defender
   for Endpoint, CrowdStrike, SentinelOne, Cortex XDR, Sophos, Gatekeeper and
   SELinux/AppArmor are in
-  [docs/security/edr-compatibility.md](https://docs.potenfyr.in/hbs-tool/security/edr-compatibility.md).
+  [docs/security/edr-compatibility.md](https://docs.potenfyr.in/repo/hbs-tool/security/edr-compatibility).
 - **Browser hardening** - strict Content-Security-Policy (the single inline
   theme-guard script is allowed by hash), `no-store` on every API response,
   cross-origin write rejection, and login rate limiting.
@@ -858,13 +858,13 @@ scripts/             Build + validation harnesses, and the installers:
   uninstall.ps1        standalone Windows uninstaller (Settings > Apps entry)
   hbs|hbs.ps1          control CLI: start|stop|restart|status|logs|open|app|tray|autostart|update|uninstall
   tray-windows.ps1 / tray-linux.sh / tray-macos.sh
-docs/                Documentation site (GitHub Pages, https:/docs.potenfyr.in/HBS-Tool)
+docs/                Documentation site (GitHub Pages, https://docs.potenfyr.in/repo/hbs-tool)
 .github/workflows/   validate.yml, release.yml (incl. desktop bundles), docs-pages.yml
 ```
 
 ## Docs & links
 
-- [Documentation site](https:/docs.potenfyr.in/HBS-Tool) (this repo's `docs/`, deployed via GitHub Pages)
+- [Documentation site](https://docs.potenfyr.in/repo/hbs-tool) (this repo's `docs/`, deployed via GitHub Pages)
 - [Releases](https://github.com/PotenFYR-Studios/HBS-Tool/releases) - installers, extractor binaries, `SHA256SUMS`, `manifest.json`
 - [Issues](https://github.com/PotenFYR-Studios/HBS-Tool/issues)
 - [License](LICENSE) - Apache-2.0 with the Commons Clause · [Notice](NOTICE.md)
